@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import "./styles/globals.scss";
+import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
+import Welcome from "./components/Welcome/Welcome";
+import Projects from "./components/Projects/Projects";
+import About from "./components/About/About";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      setMousePosition({ x: event.clientX, y: event.clientY });
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <motion.div
+        className="cursor-glow"
+        animate={{ x: mousePosition.x - 10, y: mousePosition.y - 10 }}
+        transition={{ type: "tween", ease: "easeOut", duration: 0.1 }}
+      />
+
+      <HeaderMenu />
+
+      <div className="main-content">
+        <Welcome />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <Projects />
+      <About />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
