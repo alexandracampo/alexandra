@@ -4,6 +4,10 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+
+  @media (min-width: 600px) {
+    width: 60%;
+  }
 }
 
 .carousel {
@@ -16,7 +20,6 @@
   scroll-behavior: smooth;
   overflow-x: auto;
   scrollbar-width: none;
-
   min-height: 320px;
 }
 
@@ -58,7 +61,6 @@
   padding-bottom: 2px;
   font-weight: 300;
   color: #fdfdfd;
-
   background-color: rgb(14, 81, 82);
   position: absolute;
   bottom: -14px;

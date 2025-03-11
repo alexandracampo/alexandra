@@ -19,6 +19,12 @@
     .welcome__title {
       font-size: 20px;
       margin-top: 3rem;
+
+      @media (min-width: 600px) {
+        font-size: 30px;
+        margin-left: 4rem;
+        margin-right: 4rem;
+      }
     }
 
     .color-text {
@@ -40,6 +46,11 @@
     }
 
     .welcome__text {
+      @media (min-width: 600px) {
+        font-size: 20px;
+        margin-left: 4rem;
+        margin-right: 4rem;
+      }
       .button-contact {
         all: unset;
         cursor: pointer;

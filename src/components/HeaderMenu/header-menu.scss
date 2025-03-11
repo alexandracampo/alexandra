@@ -3,7 +3,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  max-width: 20rem;
+  max-width: 40rem;
   z-index: 1000;
   margin-top: 1rem;
 
@@ -17,6 +17,10 @@
     background-color: black;
     padding: 5px;
 
+    @media (min-width: 600px) {
+      height: 3rem;
+    }
+
     a {
       text-decoration: none;
       background: none;
@@ -24,6 +28,10 @@
       cursor: pointer;
       color: white;
       border: 2px solid transparent;
+
+      @media (min-width: 600px) {
+        font-size: 18px;
+      }
 
       &:hover {
         font-weight: bold;
@@ -43,5 +51,11 @@
         transform: scale(1.1);
       }
     }
+  }
+}
+
+@media (min-width: 600px) {
+  .a {
+    font-size: 20px;
   }
 }
