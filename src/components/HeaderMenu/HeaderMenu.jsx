@@ -5,9 +5,9 @@ const HeaderMenu = () => {
     return (
         <div className='header'>
             <nav className='nav'>
-                <a href="#presentation">Welcome</a>
+                <a href="#presentation">Sobre mí</a>
                 <a href="#projects" >Proyectos</a>
-                <a href="#about" >Sobre mí</a>
+                <a href="#about" >Contacto</a>
             </nav>
         </div>
     )
