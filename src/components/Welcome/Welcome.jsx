@@ -4,8 +4,6 @@ import '../Welcome/welcome.scss';
 const Welcome = () => {
     return (
         <div className="welcome" id="presentation">
-
-
             <h1 className="welcome__title">Hola, me llamo <span className='color-text' >Alexandra</span> y me dedico al <span className='color-text'  >desarrollo de software.</span></h1>
 
             <p className="welcome__text">
@@ -13,9 +11,9 @@ const Welcome = () => {
                 <span className="tooltip" data-tooltip="España 🌍">
                     &nbsp;ES&nbsp;
                 </span>
-                y trabajo para una empresa del sector bancario.
+                y trabajo en el sector tecnológico como desarrolladora.
+                Si necesitas una página web <button className='button-contact'>contacta conmigo</button> y daremos forma a lo que tienes en mente.
                 Más abajo tienes acceso a proyectos que he ido creando, te invito a conocerlos.
-                No dudes en contactarme si quieres saber más.
             </p>
 
 
