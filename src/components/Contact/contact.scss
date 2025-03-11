@@ -1,5 +1,5 @@
 .contact-section {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,11 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
+}
+
+.title {
+  font-size: 20px;
+  padding-bottom: 2rem;
 }
 
 .contact-title {
@@ -29,10 +34,14 @@
 }
 
 .contact-label {
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 400;
   text-align: left;
   color: rgba(255, 255, 255, 0.956);
+
+  @media (min-width: 600px) {
+    font-size: 18px;
+  }
 }
 
 .contact-input,
@@ -52,7 +61,7 @@
 }
 
 .contact-button {
-  font-size: 1rem;
+  font-size: 14px;
   background: linear-gradient(
     45deg,
     rgba(0, 0, 255, 0.6),
@@ -70,6 +79,10 @@
   cursor: pointer;
   transition: background 0.3s;
   width: 100%;
+
+  @media (min-width: 600px) {
+    font-size: 18px;
+  }
 
   &:hover {
     background-color: #0d47a1; // Azul más oscuro al pasar el cursor
