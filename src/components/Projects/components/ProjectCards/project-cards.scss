@@ -1,0 +1,92 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: scroll 0.3s ease;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  scroll-behavior: smooth;
+
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Edge */
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+
+  border: 5px solid rgb(14, 81, 82);
+  border-radius: 10px;
+}
+
+.title-card {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  font-weight: 300;
+  color: #fdfdfd;
+
+  background-color: rgb(14, 81, 82);
+  position: absolute;
+  bottom: -14px;
+  width: 100%;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(31, 190, 164, 0.69);
+  border-radius: 50%;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}

@@ -4,7 +4,8 @@ import "./styles/globals.scss";
 import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
 import Welcome from "./components/Welcome/Welcome";
 import Projects from "./components/Projects/Projects";
-import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -34,7 +35,8 @@ function App() {
       </div>
 
       <Projects />
-      <About />
+      <Contact />
+      <Footer />
     </>
   );
 }

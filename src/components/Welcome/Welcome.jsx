@@ -12,7 +12,7 @@ const Welcome = () => {
                     &nbsp;ES&nbsp;
                 </span>
                 y trabajo en el sector tecnológico como desarrolladora.
-                Si necesitas una página web <button className='button-contact'>contacta conmigo</button> y daremos forma a lo que tienes en mente.
+                Si necesitas una página web <a href="#contact" className='button-contact'>contacta conmigo</a> y daremos forma a lo que tienes en mente.
                 Más abajo tienes acceso a proyectos que he ido creando, te invito a conocerlos.
             </p>
 
