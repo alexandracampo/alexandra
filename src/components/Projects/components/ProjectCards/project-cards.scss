@@ -1,26 +1,51 @@
 .carousel-container {
-  display: flex;
-  align-items: center;
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   overflow: hidden;
   width: 100%;
+  margin-right: 1rem;
 
   @media (min-width: 600px) {
     width: 60%;
   }
+}
+.title-projects {
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 6rem;
+
+  @media (min-width: 600px) {
+    font-size: 30px;
+  }
+}
+
+.color-text {
+  background-clip: text;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 255, 0.6),
+    rgba(0, 51, 255, 0.6),
+    rgba(0, 102, 255, 0.6),
+    rgba(0, 153, 255, 0.6),
+    rgba(0, 204, 255, 0.6),
+    rgba(51, 204, 255, 0.6),
+    rgba(102, 204, 255, 0.6)
+  );
 }
 
 .carousel {
   display: flex;
   align-items: center;
   transition: scroll 0.3s ease;
-  overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 20px;
   scroll-behavior: smooth;
   overflow-x: auto;
   scrollbar-width: none;
   min-height: 320px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .carousel::-webkit-scrollbar {
@@ -49,8 +74,7 @@
   width: 200px;
   height: 300px;
   object-fit: cover;
-
-  border: 5px solid rgb(14, 81, 82);
+  border: 5px solid rgb(0, 98, 255);
   border-radius: 10px;
 }
 
@@ -61,7 +85,7 @@
   padding-bottom: 2px;
   font-weight: 300;
   color: #fdfdfd;
-  background-color: rgb(14, 81, 82);
+  background-color: rgb(0, 98, 255);
   position: absolute;
   bottom: -14px;
   width: 100%;
@@ -72,11 +96,11 @@
 
 .scroll-button {
   position: absolute;
-  top: 50%;
+  top: 68%;
   transform: translateY(-50%);
-  background-color: rgba(31, 190, 164, 0.69);
+  background-color: rgba(255, 255, 255, 0.588);
   border-radius: 50%;
-  color: white;
+  color: rgba(0, 98, 255, 0.53);
   border: none;
   padding: 10px;
   font-size: 24px;
@@ -92,4 +116,8 @@
 
 .scroll-button.right {
   right: 10px;
+}
+
+.scroll-button:hover {
+  background-color: rgb(255, 255, 255);
 }

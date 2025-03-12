@@ -30,7 +30,7 @@ function App() {
 
       <HeaderMenu />
 
-      <div className="main-content">
+      <div className="main-content" id="presentation">
         <Welcome />
       </div>
 

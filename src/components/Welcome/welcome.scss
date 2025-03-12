@@ -2,8 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  height: 80vh;
 
   .welcome {
     display: flex;
@@ -12,9 +10,8 @@
     align-items: center;
     text-align: start;
     font-weight: 100;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    height: 100vh;
+    margin: 6rem 1rem 1rem 1rem;
+    max-width: 600rem;
 
     .welcome__title {
       font-size: 20px;
@@ -46,7 +43,7 @@
     }
 
     .welcome__text {
-      width: 60rem;
+      max-width: 60rem;
       @media (min-width: 600px) {
         font-size: 20px;
         margin-left: 4rem;

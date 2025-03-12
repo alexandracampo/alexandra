@@ -22,10 +22,13 @@ const ProjectCards = () => {
     };
 
     return (
-        <div className="carousel-container">
+        <div className="carousel-container" id="projects"  >
+            <h3 className="title-projects"> Mis <span className="color-text">proyectos</span> en GitHub: </h3>
+
             <button className="scroll-button left" onClick={() => scrollCarousel(-1)}>
                 &lt;
             </button>
+
             <div className="carousel" ref={carouselRef}>
                 {projects.map((project) => (
                     <a
@@ -40,6 +43,7 @@ const ProjectCards = () => {
                     </a>
                 ))}
             </div>
+
             <button className="scroll-button right" onClick={() => scrollCarousel(1)}>
                 &gt;
             </button>
