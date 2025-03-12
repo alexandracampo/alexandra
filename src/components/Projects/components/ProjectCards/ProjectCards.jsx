@@ -2,13 +2,13 @@ import React, { useRef } from "react";
 import "./project-cards.scss";
 
 const projects = [
-    { id: 1, title: "Prime Cleaning", link: "https://github.com/alexandracampo/prime-cleaning", img: "/cleaning.JPG" },
-    { id: 2, title: "Memory", link: "https://github.com/alexandracampo/memory", img: "/memory.jpg" },
-    { id: 3, title: "Adivina el número", link: "https://github.com/alexandracampo/adivina-el-numero", img: "/number.jpg" },
-    { id: 4, title: "Consulta el tiempo", link: "https://github.com/alexandracampo/weatherInfo", img: "/weather.jpg" },
-    { id: 5, title: "To do list", link: "https://github.com/alexandracampo/lista-tareas", img: "/todo.jpg" },
-    { id: 6, title: "Tus proyectos", link: "https://github.com/alexandracampo/web-de-proyectos", img: "/proyectos.JPG" },
-    { id: 6, title: "Tu tarjeta de visita", link: "https://github.com/alexandracampo/web-tarjetas-de-visita", img: "/tarjetas.JPG" },
+    { id: 1, title: "Prime Cleaning", link: "https://github.com/alexandracampo/prime-cleaning", img: "cleaning.JPG" },
+    { id: 2, title: "Memory", link: "https://github.com/alexandracampo/memory", img: "memory.jpg" },
+    { id: 3, title: "Adivina el número", link: "https://github.com/alexandracampo/adivina-el-numero", img: "number.jpg" },
+    { id: 4, title: "Consulta el tiempo", link: "https://github.com/alexandracampo/weatherInfo", img: "weather.jpg" },
+    { id: 5, title: "To do list", link: "https://github.com/alexandracampo/lista-tareas", img: "todo.jpg" },
+    { id: 6, title: "Tus proyectos", link: "https://github.com/alexandracampo/web-de-proyectos", img: "proyectos.JPG" },
+    { id: 6, title: "Tu tarjeta de visita", link: "https://github.com/alexandracampo/web-tarjetas-de-visita", img: "tarjetas.JPG" },
 ];
 
 const ProjectCards = () => {
