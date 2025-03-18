@@ -74,7 +74,7 @@
   width: 200px;
   height: 300px;
   object-fit: cover;
-  border: 5px solid rgb(0, 98, 255);
+  border: 3px solid rgb(0, 98, 255);
   border-radius: 10px;
 }
 
@@ -95,6 +95,8 @@
 }
 
 .scroll-button {
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: 68%;
   transform: translateY(-50%);
@@ -112,10 +114,18 @@
 
 .scroll-button.left {
   left: 10px;
+  background-image: url("left.png");
+  background-size: 40px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .scroll-button.right {
   right: 10px;
+  background-image: url("right.png");
+  background-size: 40px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .scroll-button:hover {

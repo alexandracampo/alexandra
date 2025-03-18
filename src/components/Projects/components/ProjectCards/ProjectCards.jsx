@@ -26,7 +26,7 @@ const ProjectCards = () => {
             <h3 className="title-projects"> Mis <span className="color-text">proyectos</span> en GitHub: </h3>
 
             <button className="scroll-button left" onClick={() => scrollCarousel(-1)}>
-                &lt;
+                {/*  &lt; */}
             </button>
 
             <div className="carousel" ref={carouselRef}>
@@ -45,7 +45,7 @@ const ProjectCards = () => {
             </div>
 
             <button className="scroll-button right" onClick={() => scrollCarousel(1)}>
-                &gt;
+                {/* &gt; */}
             </button>
         </div>
     );
