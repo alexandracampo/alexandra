@@ -25,7 +25,7 @@ const ProjectCards = () => {
         <>
             <div id="projects" className="header-projects">
                 <h3 className="title-projects"> Mis <span className="color-text">proyectos</span> en GitHub: </h3>
-                <p className="text-projects">Aquí tienes acceso a mis proyectos, algunos están en proceso de construcción, así que no te asustes si ves un diseño que parece de los 90</p>
+                <p className="text-projects">Aquí tienes acceso a mis proyectos, algunos están en proceso de construcción, así que no te asustes si ves un diseño que parece de los 90 😜</p>
             </div>
 
             <div className="carousel-container"   >
