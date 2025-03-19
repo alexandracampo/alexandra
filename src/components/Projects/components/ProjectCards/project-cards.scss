@@ -10,13 +10,41 @@
     width: 60%;
   }
 }
+
+.header-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+  margin-left: 1rem;
+
+  @media (min-width: 600px) {
+    font-size: 30px;
+    align-items: center;
+  }
+}
+
 .title-projects {
   text-align: left;
-  margin-left: 1rem;
   margin-top: 6rem;
 
   @media (min-width: 600px) {
     font-size: 30px;
+  }
+}
+
+.text-projects {
+  text-align: left;
+  font-weight: 100;
+  font-size: 16px;
+  margin-bottom: 3rem;
+
+  @media (min-width: 600px) {
+    font-size: 20px;
+    max-width: 60rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 }
 
