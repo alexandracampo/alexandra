@@ -6,9 +6,9 @@ const projects = [
     { id: 2, title: "Memory", link: "https://alexandracampo.github.io/memory/", img: "memory.jpg" },
     { id: 3, title: "Adivina el número", link: "https://alexandracampo.github.io/adivina-el-numero/", img: "number.jpg" },
     { id: 4, title: "Consulta el tiempo", link: "https://alexandracampo.github.io/weatherInfo/", img: "weather.jpg" },
-    { id: 5, title: "To do list", link: "https://alexandracampo.github.io/lista-tareas/", img: "todo.jpg" },
+    { id: 5, title: "To-do list & Pomodoro", link: "https://alexandracampo.github.io/to-do-list/", img: "todo.jpg" },
     { id: 6, title: "Tus proyectos", link: "https://alexandracampo.github.io/web-de-proyectos/", img: "proyectos.JPG" },
-    { id: 6, title: "Tu tarjeta de visita", link: "https://alexandracampo.github.io/web-tarjetas-de-visita/", img: "tarjetas.JPG" },
+    { id: 7, title: "Tu tarjeta de visita", link: "https://alexandracampo.github.io/web-tarjetas-de-visita/", img: "tarjetas.JPG" },
 ];
 
 const ProjectCards = () => {
