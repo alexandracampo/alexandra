@@ -8,7 +8,7 @@ const projects = [
     { id: 4, title: "Consulta el tiempo", link: "https://alexandracampo.github.io/weatherInfo/", img: "weather.jpg" },
     { id: 5, title: "To do list", link: "https://alexandracampo.github.io/lista-tareas/", img: "todo.jpg" },
     { id: 6, title: "Tus proyectos", link: "https://alexandracampo.github.io/web-de-proyectos/", img: "proyectos.JPG" },
-    { id: 6, title: "Tu tarjeta de visita", link: "https://alexandracampo.github.io/web-tarjetas-de-visita/", img: "tarjetas.JPG" },
+    { id: 7, title: "Tu tarjeta de visita", link: "https://alexandracampo.github.io/web-tarjetas-de-visita/", img: "tarjetas.JPG" },
 ];
 
 const ProjectCards = () => {
@@ -25,8 +25,17 @@ const ProjectCards = () => {
         <>
             <div id="projects" className="header-projects">
                 <h3 className="title-projects"> Mis <span className="color-text">proyectos</span> en GitHub: </h3>
-                <p className="text-projects">Aquí tienes acceso a mis proyectos, algunos están en proceso de construcción, así que no te asustes si ves un diseño que parece de los 90 😜</p>
+                <p className="text-projects">Aquí tienes acceso a mis proyectos, algunos están en proceso de construcción, así que no te asustes si ves un diseño que parece de los 90 😜
+                    <br />
+                    <br />
+                    Las tecnologías que he utilizado en mis proyectos son: React, Javascript, HTML, CSS/Sass, Tailwind, Testing Library, Jest, Typescript. En el lado del backend: MongoDB, Node.js, Express,
+
+                </p>
+
+
             </div>
+
+
 
             <div className="carousel-container"   >
                 <button className="scroll-button left" onClick={() => scrollCarousel(-1)}>
@@ -45,6 +54,7 @@ const ProjectCards = () => {
                             <img src={project.img} alt={project.title} />
                             <h3 className="title-card">{project.title}</h3>
                         </a>
+
                     ))}
                 </div>
 
