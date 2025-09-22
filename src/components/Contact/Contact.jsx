@@ -32,7 +32,6 @@ const Contact = () => {
             <div className="links">
                 <a href="https://github.com/alexandracampo" target="_blank" rel="noopener noreferrer" ><img src="github.png" alt="Ir a github de Alexandra" className="icon-github" /></a>
                 <a href="https://www.linkedin.com/in/alexandracampomatilla/" target="_blank" rel="noopener noreferrer" ><img src="linkedin.png" alt="Ir a linkedin de Alexandra" className="icon-linkedin" /></a>
-                <a href="curriculum.pdf" target="_blank" rel="noopener noreferrer" ><img src="cv.png" alt="Ver PDF" className="icon-pdf" /></a>
             </div>
 
         </section>
