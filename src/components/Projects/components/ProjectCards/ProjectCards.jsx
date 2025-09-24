@@ -28,7 +28,7 @@ const ProjectCards = () => {
                 <p className="text-projects">Aquí tienes acceso a mis proyectos, algunos están en proceso de construcción, así que no te asustes si ves un diseño que parece de los 90 😜
                     <br />
                     <br />
-                    Las tecnologías que he utilizado en mis proyectos son: React, Javascript, HTML, CSS/Sass, Tailwind, Testing Library, Jest, Typescript. En el lado del backend: MongoDB, Node.js, Express,
+                    Las tecnologías que he utilizado en mis proyectos son: React, Javascript, HTML, CSS/Sass, Tailwind, Testing Library, Jest, Typescript. En el lado del backend: MongoDB, Node.js, Express.
 
                 </p>
 
